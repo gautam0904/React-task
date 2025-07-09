@@ -4,9 +4,9 @@ const Home = () => {
     return (
         <div className="w-full min-h-screen bg-gradient-to-b from-slate-900 to-slate-800 flex flex-col items-center py-8 px-2">
             {/* Breadcrumb */}
-                  <nav className="w-full max-w-4xl text-xs sm:text-sm text-gray-300 mb-4 sm:mb-6">
-                    <Link to="/" className="hover:underline">Home</Link> 
-                  </nav>
+            <nav className="w-full max-w-4xl text-xs sm:text-sm text-gray-300 mb-4 sm:mb-6">
+                <Link to="/" className="hover:underline">Home</Link>
+            </nav>
 
             <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-white">Welcome to Home</h1>
 
