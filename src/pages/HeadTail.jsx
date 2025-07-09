@@ -37,7 +37,7 @@ const HeadTail = () => {
 
       {/* Container */}
       <div className="bg-white text-gray-800 rounded-xl shadow-lg border border-gray-200 p-4 sm:p-8 w-full max-w-md sm:max-w-xl mx-auto">
-        <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Head & Tail Game</h1>
+        <h1 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-center">Head & Tail </h1>
 
         {/* Dropdown + Button */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4">
@@ -53,23 +53,24 @@ const HeadTail = () => {
 
           <button
             onClick={handleSubmit}
-            className="bg-black text-white px-4 sm:px-6 py-2 rounded hover:bg-gray-800 transition"
+            className="bg-black text-white px-4 sm:px-6 py-2 rounded shadow-md hover:bg-gray-800 focus:ring-2 focus:ring-blue-500 transition duration-200"
           >
             Submit
           </button>
+          
         </div>
 
         {/* Validation Message */}
         {error && <p className="text-red-600 text-xs sm:text-sm mt-2">{error}</p>}
 
         {/* Result Columns */}
-        <div className="flex gap-3 sm:gap-6 mt-6 sm:mt-8 justify-center overflow-x-auto">
+        <div className="flex gap-3 sm:gap-6 mt-6 sm:mt-8 justify-start sm:justify-center overflow-x-auto scrollbar-thin px-2 sm:px-4 py-2 scrollbar-thin scrollbar-thumb-gray-400">
           {columns.map((col, colIndex) => (
             <div key={colIndex} className="flex flex-col items-center gap-1 sm:gap-2">
               {col.map((val, rowIndex) => (
                 <div
                   key={rowIndex}
-                  className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-blue-100 text-blue-700 font-semibold border border-blue-300 rounded"
+                  className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center bg-blue-100 text-blue-700 font-semibold border border-blue-300 rounded hover:bg-blue-200 transition duration-200"
                 >
                   {val}
                 </div>
